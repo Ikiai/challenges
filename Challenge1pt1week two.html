@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+      
+<head> 
+    <title> 
+        JavaScript Output using document.write() 
+    </title> 
+</head> 
+  
+<body> 
+    <h1>YEAR OF BIRTH</h1> 
+
+  <p id="demo"></p>
+    <script> 
+     var year;    
+ var person = prompt("Please enter your year of birth", "0");
+
+
+ var year = 2019 - person;
+
+if (year < 18) {
+    document.getElementById("demo").innerHTML = "You are a minor";
+} 
+else if (year >= 18 && year < 36) {
+    document.getElementById("demo").innerHTML = "You are a youth";
+} 
+else if ( year >=36 && year < 120){
+    document.getElementById("demo").innerHTML = "You are an elder";
+}
+else {
+document.getElementById("demo").innerHTML = "ERROR";
+}
+    </script> 
+</body> 
+  
+</html> 
