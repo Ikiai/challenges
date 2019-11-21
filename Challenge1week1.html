@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basic Mathematical Operations</title>
+
+    <style>
+        html {
+            background-color: beige;
+        }
+        
+        #navbar {
+            position: fixed;
+            min-width: 300px;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            border-right: solid;
+            border-color: black;
+        }
+        
+        #navbar li {
+            color: maroon;
+            border-bottom: solid;
+            border-color: black;
+            border-bottom-width: 1px;
+            padding: 5px;
+        }
+        
+        #main-doc {
+            position: absolute;
+            margin-top: 0px;
+            margin-left: 320px;
+            padding: 30px;
+        }
+        
+        section li {
+            margin: 15px 0px 0px 20px;
+        }
+        
+        code {
+            display: block;
+            text-align: left;
+            border-color: maroon;
+            background-color: maroon;
+            color: grey;
+            padding: 15px;
+            margin: 2px;
+        }
+        
+        @media only screen and (max-width: 900px) {
+            #navbar ul {
+                border: 1px solid;
+                height: 200px;
+            }
+            #navbar {
+                background-color: beige;
+                position: absolute;
+                top: 0;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                max-height: 100%;
+                border: none;
+                z-index: 1;
+                border-bottom: 2px solid;
+            }
+            #main-doc {
+                position: relative;
+                margin-left: 0px;
+                margin-top: 270px;
+            }
+            #main-doc section {}
+        }
+        
+        @media only screen and (max-width: 400px) {
+            #main-doc {
+                margin-left: -10px;
+            }
+            code {
+                margin-left: -20px;
+                width: 100%;
+                padding: 15px;
+                padding-left: 10px;
+                padding-right: 45px;
+                min-width: 233px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <h3>Table of Contents</h3>
+            <header>
+                <ul>
+                    <a class="nav-link" href="#Introduction" rel="internal">
+                        <li>Introduction</li>
+                    </a>
+                    <a class="nav-link" href="#Addition" rel="internal">
+                        <li>Addition</li>
+                    </a>
+                    <a class="nav-link" href="#Subtraction" rel="internal">
+                        <li>Subtraction</li>
+                    </a>
+                    <a class="nav-link" href="#Multiplication" rel="internal">
+                        <li>Multiplication</li>
+                    </a>
+                    <a class="nav-link" href="#Division" rel="internal">
+                        <li>Division</li>
+                    </a>
+                    <a class="nav-link" href="#Conclusion" rel="internal">
+                        <li>Conclusion</li>
+                    </a>
+                </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header><b><h2>Introduction</h2></b></header>
+            <article>
+                <p>The four basic mathematical operations include;
+                    <li> Addition</li>
+                    <li> Subtraction</li>
+                    <li> Multiplication</li>
+                    <li> Division</li>
+                </p>
+                <p>Understanding them is the key to progressing in mathematics especially Algebra. </p>
+            </article>
+        </section>
+        <section class="main-section" id="Addition">
+            <header><b><h2>Addition</h2></b></header>
+            <article>
+                <p>In this section, two numbers are added together to form a result called a sum. </p>
+                <p>Below is a code that shows how to add two numbers: </p>
+                <code>
+a=2; b=3; c=a+b;
+cout << "The sum of a and b is "<< c <<;
+</code>
+                <p>The sum of three numbers is also indicated below:</p>
+                <code>
+a=2; b=3; c=5; d=a+b+c;
+cout << "The sum of a and b and c is "<< d <<;
+</code>
+            </article>
+        </section>
+        <section class="main-section" id="Subtraction">
+            <header><b><h2>Subtraction</h2></b></header>
+            <article>
+                <p>This is the difference between two variables. It is a complementary operation to addition </p>
+                <p>Below is a code that shows how to subtract two numbers: </p>
+                <code>
+a=5; b=3; c=a-b;
+cout << "The difference between a and b is "<< c <<;
+</code>
+            </article>
+        </section>
+        <section class="main-section" id="Multiplication">
+            <header><b><h2>Multiplication</h2></b></header>
+            <article>
+                <p>This is the product between two variables or numbers.</p>
+                <p>The word times is also used in the place of the multiplication.</p>
+                <p>It is a commutative function. </p>
+                <p>Below is a code that shows how to multiply two numbers: </p>
+                <code>
+a=2; b=7; c=a*b;
+cout << "The product of a and b is "<< c <<;
+</code>
+            </article>
+        </section>
+        <section class="main-section" id="Division">
+            <header><b><h2>Division</h2></b></header>
+            <article>
+                <p>This is the inverse of multiplication.</p>
+                <p>The number being divided is called the dividend.</p>
+                <p>The number by which it is divided is called the divisor.</p>
+                <p>The result of this operation is called a quotient.</p>
+                <p>Below is a code that shows how to divide two numbers: </p>
+                <code>
+a=10; b=5; c=a/b;
+cout << "The quotient of a and b is "<< c <<;
+</code>
+            </article>
+        </section>
+        <section class="main-section" id="Conclusion">
+            <header><b><h2>Conclusion</h2></b></header>
+            <article>
+                <p>This four basic operations can be used to build upon other functions like;
+                    <li>square</li>
+                    <li>square root</li>
+                </p>
+                <p>The other functions like trigonometry and logarithms can further be researched on the internet on how to apply them.</p>
+            </article>
+        </section>
+</body>
+
+</html>
